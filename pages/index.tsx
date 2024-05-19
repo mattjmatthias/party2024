@@ -17,7 +17,7 @@ const LandingPage: NextPage = () => {
       <section className="self-stretch flex flex-row items-start justify-center p-[80px] box-border max-w-full text-center text-17xl text-black font-futura lg:box-border">
         <div className="flex flex-col items-start justify-start gap-[24px] max-w-full">
           <b className="self-stretch relative mq450:text-3xl mq825:text-10xl">
-            <nobr>6PM-LATE, </nobr> <nobr>SAT 14TH SEPTEMBER 2024</nobr>
+            6PM-LATE, SAT 14TH SEPTEMBER 2024
           </b>
           <div className="self-stretch relative text-5xl leading-[150%] font-roboto text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
             It’s Matt + Steve’s 45th birthday this year, so we’re throwing a party to celebrate!
