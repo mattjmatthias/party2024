@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 
 export type VenueDetailsType = {
-  image7?: string;
+  imgSrc?: string;
   title?: string;
   mins?: string;
   am?: string;
@@ -15,7 +15,7 @@ export type VenueDetailsType = {
 };
 
 const VenueDetails: NextPage<VenueDetailsType> = ({
-  image7,
+  imgSrc,
   title,
   mins,
   am,
@@ -45,14 +45,14 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
 
   return (
     <div
-      className="flex flex-col items-start justify-start py-0 pr-[5px] pl-0 gap-[9px] text-left text-5xl text-black font-futura"
+      className="flex flex-col items-start justify-start py-0 pr-[5px] pl-0 gap-[9px] text-left text-5xl text-black font-futura  mq825:min-w-[145px] mq825:max-w-[145px] min-w-[190px] max-w-[190px]"
       style={venueDetailsStyle}
     >
       <img
-        className="w-[194px] h-[194px] relative object-cover"
+        className="w-[196px] h-[194px] mq825:w-[150px] mq825:h-[150px] relative object-cover rounded-3xs"
         loading="lazy"
         alt=""
-        src={image7}
+        src={imgSrc}
       />
       <div className="self-stretch flex flex-col items-start justify-start">
         <div className="flex flex-row items-start justify-start py-0 px-0.5">

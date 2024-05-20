@@ -44,7 +44,7 @@ module.exports = {
     },
     fontSize: {
       base: "16px",
-      "5xl": "24px",
+      "5xl": "22px",
       lgi: "19px",
       "45xl": "64px",
       "19xl": "38px",
@@ -53,7 +53,7 @@ module.exports = {
       "21xl": "40px",
       "13xl": "32px",
       "17xl": "36px",
-      "3xl": "22px",
+      "3xl": "21px",
       "10xl": "29px",
       "77xl": "96px",
       "29xl": "48px",

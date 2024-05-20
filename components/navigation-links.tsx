@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 
 export type NavigationLinksType = {
-  rsvp?: string;
-  rSVPASAP?: string;
-  letUsKnowIfYoureComingAsS?: string;
+  imgSrc?: string;
+  title?: string;
+  subTitle?: string;
 
   /** Style props */
   propMixBlendMode?: CSSProperties["mixBlendMode"];
@@ -12,13 +12,13 @@ export type NavigationLinksType = {
 };
 
 const NavigationLinks: NextPage<NavigationLinksType> = ({
-  rsvp,
-  rSVPASAP,
-  letUsKnowIfYoureComingAsS,
+  imgSrc,
+  title,
+  subTitle,
   propMixBlendMode,
   propOverflow,
 }) => {
-  const rsvpIconStyle: CSSProperties = useMemo(() => {
+  const imgSrcIconStyle: CSSProperties = useMemo(() => {
     return {
       mixBlendMode: propMixBlendMode,
       overflow: propOverflow,
@@ -26,19 +26,19 @@ const NavigationLinks: NextPage<NavigationLinksType> = ({
   }, [propMixBlendMode, propOverflow]);
 
   return (
-    <div className="self-stretch flex flex-col items-start justify-start gap-[8px] text-left text-5xl text-black font-small-text mb-10">
+    <div className="self-stretch flex flex-col items-start w-full justify-start gap-[8px] text-left text-5xl text-black font-small-text mb-10">
       <img
         className="w-8 h-8 relative object-contain mix-blend-luminosity"
         loading="lazy"
         alt=""
-        src={rsvp}
-        style={rsvpIconStyle}
+        src={imgSrc}
+        style={imgSrcIconStyle}
       />
       <div className="self-stretch relative leading-[150%] mq450:text-lgi mq450:leading-[29px]">
-        {rSVPASAP}
+        {title}
       </div>
-      <div className="self-stretch relative text-xl leading-[150%] font-medium text-gray-100 mq450:text-base mq450:leading-[24px]">
-        {letUsKnowIfYoureComingAsS}
+      <div className="self-stretch relative text-xl leading-[150%] font-regular text-gray-100 mq450:text-base mq450:leading-[24px]">
+        {subTitle}
       </div>
     </div>
   );
