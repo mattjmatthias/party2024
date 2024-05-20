@@ -34,10 +34,10 @@ const NavigationLinks: NextPage<NavigationLinksType> = ({
         src={imgSrc}
         style={imgSrcIconStyle}
       />
-      <div className="self-stretch relative leading-[150%] mq450:text-lgi mq450:leading-[29px]">
+      <div className="self-stretch relative font-semibold leading-[150%] mq450:text-lgi mq450:leading-[29px]">
         {title}
       </div>
-      <div className="self-stretch relative text-xl leading-[150%] font-regular text-gray-100 mq450:text-base mq450:leading-[24px]">
+      <div className="self-stretch relative text-xl leading-[150%] font-regular text-darkslategray-200 text-base mq450:leading-[24px]">
         {subTitle}
       </div>
     </div>

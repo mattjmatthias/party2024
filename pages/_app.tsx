@@ -12,6 +12,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <meta 
+          name="theme-color"
+          content="#030406"
+        />
       </Head>
       <Component {...pageProps} />
     </Fragment>

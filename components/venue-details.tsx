@@ -57,34 +57,34 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
       <div className="self-stretch flex flex-col items-start justify-start">
         <div className="flex flex-row items-start justify-start py-0 px-0.5">
           <div
-            className="relative tracking-[-0.03em] leading-[150%] font-medium z-[1] mq450:text-lgi mq450:leading-[29px]"
+            className="relative tracking-[-0.03em] leading-[150%] font-semibold z-[1] mq450:text-lgi mq450:leading-[29px]"
             style={title1Style}
           >
             {title}
           </div>
         </div>
         <div className="self-stretch flex flex-row items-start justify-start gap-[5px] mt-[-5px]">
-          <div className="flex flex-col items-start justify-start pt-[9.5px] px-0 pb-0">
+          <div className="flex flex-col items-start justify-start pt-[7px] px-0 pb-0">
             <img
-              className="w-[17px] h-[17px] relative object-cover mix-blend-luminosity"
+              className="w-[17px] h-[18px] relative object-cover mix-blend-luminosity"
               alt=""
               src="/image-13@2x.png"
             />
           </div>
           <div
-            className="flex-1 relative tracking-[-0.03em] leading-[150%] font-medium inline-block min-w-[77px] mq450:text-lgi mq450:leading-[29px]"
+            className="flex-1 relative tracking-[-0.03em] leading-[150%] font-regular inline-block min-w-[77px] mq450:text-lgi mq450:leading-[29px]"
             style={minsStyle}
           >
             {mins}
           </div>
-          <div className="flex flex-col items-start justify-start pt-[9.5px] px-0 pb-0">
+          <div className="flex flex-col items-start justify-start pt-[7.5px] px-0 pb-0">
             <img
-              className="w-[17px] h-[17px] relative object-cover"
+              className="w-[18px] h-[18px] relative object-cover"
               alt=""
               src="/time-1@2x.png"
             />
           </div>
-          <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-medium inline-block min-w-[82px] mq450:text-lgi mq450:leading-[29px]">
+          <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-regular inline-block min-w-[82px] mq450:text-lgi mq450:leading-[29px]">
             {am}
           </div>
         </div>

@@ -3,13 +3,13 @@ import Hotel from "./hotelFrame";
 
 const Hotels: NextPage = () => {
   return (
-    <section className="w-[1345px] flex flex-row items-start justify-start p-[80px] pb-[40px] mq825:p-[50px] box-border max-w-full text-left text-13xl text-black font-small-text mq825:pb-[83px] mq825:box-border mq1425:box-border">
+    <section className="w-[1345px] flex flex-row items-start justify-start p-[80px] pb-[0px] mq825:p-[50px] box-border max-w-full text-left text-13xl text-black font-small-text mq825:pb-[83px] mq825:box-border mq1425:box-border">
       <div className="flex-1 flex flex-col items-end justify-start gap-[47px] max-w-full mq825:gap-[23px]">
         <div className="self-stretch flex flex-col items-start justify-start gap-[26px] max-w-full">
           <h2 className="m-0 w-[625px] relative text-inherit leading-[110%] font-semibold font-inherit inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
             If you’re staying over
           </h2>
-          <div className="self-stretch relative text-xl leading-[150%] font-roboto text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
+          <div className="self-stretch relative leading-[150%] text-xl tracking-[-0.75px] font-small-text text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
             Hotels with the cost and distance from the venue
           </div>
         </div>

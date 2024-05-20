@@ -6,7 +6,9 @@ const NavigationFooter: NextPage = () => {
       <div className="self-stretch h-px relative box-border border-t-[1px] border-solid border-gainsboro-100" />
       <div className="self-stretch flex flex-row items-end justify-between max-w-full gap-[20px] lg:flex-wrap">
         <div className="flex flex-col items-start justify-start gap-[88px] min-w-[278px] lg:flex-1 mq450:gap-[44px]">
-          <div className="relative leading-[150%] font-medium mq450:text-lgi mq450:leading-[29px]">{`#m&s-summer-party-2024`}</div>
+          <div className="relative leading-[150%] font-bold mq450:text-lgi mq450:leading-[29px]">
+            #m&s-summer-party-2024
+          </div>
           <div className="flex flex-row items-start justify-start gap-[8px]">
             <img
               className="h-10 w-10 relative rounded object-cover min-h-[40px]"
@@ -24,36 +26,20 @@ const NavigationFooter: NextPage = () => {
         </div>
         <div className="w-[624px] flex flex-row items-start justify-start gap-[31.5px] min-w-[624px] max-w-full text-base text-darkslategray-100 font-small-text lg:flex-1 lg:min-w-full mq825:flex-wrap mq825:gap-[16px]">
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[140px]">
-            <div className="self-stretch relative leading-[150%] font-medium text-black">
-              Links
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">
-              Hotels
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">{`Bit of Dancing `}</div>
-            <div className="self-stretch relative leading-[150%] font-medium">{`A Few Drinks `}</div>
+            <div className="self-stretch relative leading-[150%] font-black text-black">Links</div>
+            <div className="self-stretch relative leading-[150%] font-medium">Hotels</div>
+            <div className="self-stretch relative leading-[150%] font-medium">Bit of Dancing</div>
+            <div className="self-stretch relative leading-[150%] font-medium">A Few Drinks</div>
           </div>
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[140px]">
-            <div className="self-stretch relative leading-[150%] font-medium text-black">
-              Travel
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">
-              Trains
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">
-              Taxis
-            </div>
+            <div className="self-stretch relative leading-[150%] font-black text-black">Travel</div>
+            <div className="self-stretch relative leading-[150%] font-medium">Trains</div>
+            <div className="self-stretch relative leading-[150%] font-medium">Taxis</div>
           </div>
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[140px]">
-            <div className="self-stretch relative leading-[150%] font-medium text-black">
-              Confirm
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">
-              RSVP
-            </div>
-            <div className="self-stretch relative leading-[150%] font-medium">
-              Other notes
-            </div>
+            <div className="self-stretch relative leading-[150%] font-black text-black">Confirm</div>
+            <div className="self-stretch relative leading-[150%] font-medium">RSVP</div>
+            <div className="self-stretch relative leading-[150%] font-medium">Finally...</div>
           </div>
         </div>
       </div>

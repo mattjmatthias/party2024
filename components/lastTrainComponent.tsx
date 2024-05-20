@@ -35,7 +35,7 @@ const LastTrainComponent: NextPage<LastTrainComponentType> = ({
         <div className="flex-1 flex flex-col items-start justify-start min-w-[187px]">
           <div className="flex flex-row items-start justify-start py-0 px-0.5">
             <div
-              className="relative tracking-[-0.03em] leading-[150%] font-light inline-block min-w-[83px] z-[1] mq450:text-lgi mq450:leading-[29px]"
+              className="relative tracking-[-0.03em] leading-[150%] font-semibold inline-block min-w-[83px] z-[1] mq450:text-lgi mq450:leading-[29px]"
               style={titleStyle}
             >
               {title}
@@ -43,9 +43,9 @@ const LastTrainComponent: NextPage<LastTrainComponentType> = ({
           </div>
           <div className="self-stretch flex flex-row items-start justify-start gap-[34px] mt-[-5px] mq450:gap-[17px]">
             <div className="flex flex-row items-start justify-start gap-[5px]">
-              <div className="flex flex-col items-start justify-start pt-[9.5px] px-0 pb-0">
+              <div className="flex flex-col items-start justify-start pt-[6px] px-0 pb-0">
                 <img
-                  className="w-[17px] h-[17px] relative object-cover"
+                  className="w-[17px] h-[18px] relative object-cover"
                   alt=""
                   src="/time-1@2x.png"
                 />
@@ -55,9 +55,9 @@ const LastTrainComponent: NextPage<LastTrainComponentType> = ({
               </div>
             </div>
             <div className="flex-1 flex flex-row items-start justify-start gap-[5px]">
-              <div className="flex flex-col items-start justify-start pt-[5.5px] px-0 pb-0">
+              <div className="flex flex-col items-start justify-start pt-[3.5px] px-0 pb-0">
                 <img
-                  className="w-[25px] h-[25px] relative object-cover mix-blend-luminosity"
+                  className="w-[17px] h-[22px] relative object-cover mix-blend-luminosity"
                   alt=""
                   src="/arrivaltime-1@2x.png"
                 />

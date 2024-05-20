@@ -33,7 +33,7 @@ module.exports = {
       spacing: {},
       fontFamily: {
         "small-text": "Inter",
-        futura: "Futura",
+        futura: "Kumbh Sans",
         roboto: "Roboto",
         "noto-sans": "'Noto Sans'",
       },

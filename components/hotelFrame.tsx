@@ -26,12 +26,12 @@ const Hotel: NextPage<HotelType> = ({
             <div className="flex flex-col items-start justify-start gap-[14px]">
               <div className="flex flex-col items-start justify-start">
                 <div className="flex flex-row items-start justify-start py-0 px-0.5">
-                  <div className="relative tracking-[-0.03em] leading-[150%] font-[300] inline-block min-w-[106px] z-[1] mq450:text-lgi mq450:leading-[29px]">
+                  <div className="relative tracking-[-0.03em] leading-[150%] font-semibold inline-block min-w-[106px] z-[1] mq450:text-lgi mq450:leading-[29px]">
                     {name}
                   </div>
                 </div>
                 <div className="flex flex-row items-start justify-start gap-[5px] mt-[-5px]">
-                  <div className="flex flex-col items-start justify-start pt-[9.5px] px-0 pb-0">
+                  <div className="flex flex-col items-start justify-start pt-[6px] px-0 pb-0">
                     <img
                       className="w-[17px] h-[17px] relative object-cover mix-blend-luminosity"
                       alt=""
