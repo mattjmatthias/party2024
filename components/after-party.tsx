@@ -14,7 +14,7 @@ const AfterParty: NextPage = () => {
             Places to dance until late, or go for a few last cocktails, with time from venue and closing time
           </div>
         </div>
-        <div className="w-[702px] flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border gap-[30px] max-w-full mq450:pb-[34px] mq450:box-border">
+        <div className="w-full flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border gap-[30px] max-w-full mq450:pb-[34px] mq450:box-border">
           <div className="flex flex-row items-start justify-start py-0 px-0.5">
             <img
               className="h-[50px] w-[50px] relative object-cover mix-blend-luminosity"
@@ -22,7 +22,7 @@ const AfterParty: NextPage = () => {
               src="/dance@2x.png"
             />
           </div>
-          <div className="self-stretch grid flex-row items-start justify-start gap-[54.8px] mq825:gap-[47px] grid-cols-[repeat(3,_minmax(160px,_1fr))] mq450:grid-cols-[minmax(160px,_1fr)] mq825:justify-center mq825:grid-cols-[repeat(2,_minmax(160px,_278px))]">
+          <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
             <VenueDetails
               imgSrc="/image-7@2x.png"
               title="Tonight Josephine"
@@ -43,13 +43,13 @@ const AfterParty: NextPage = () => {
             />
           </div>
         </div>
-        <div className="w-[687px] flex flex-col items-start justify-start gap-[30px] max-w-full">
+        <div className="w-full flex flex-col items-start justify-start gap-[30px] max-w-full">
           <img
             className="w-[50px] h-[50px] relative object-contain mix-blend-luminosity"
             alt=""
             src="/cocktail@2x.png"
           />
-          <div className="self-stretch grid flex-row items-start justify-start gap-[54.8px] mq825:gap-[47px] grid-cols-[repeat(3,_minmax(160px,_1fr))] mq450:grid-cols-[minmax(160px,_1fr)] mq825:justify-center mq825:grid-cols-[repeat(2,_minmax(160px,_278px))]">            
+          <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">            
             <VenueDetails
               imgSrc="/image-9@2x.png"
               title="Dirty Martini"

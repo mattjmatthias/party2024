@@ -4,7 +4,7 @@ const EighteenIntro2: NextPage = () => {
   return (
     <section className="self-stretch flex flex-col items-start justify-start p-[80px] mq825:p-[50px] box-border max-w-full text-left text-10xl text-black font-futura mq825:box-border">
       <div className="w-full flex mq825:flex-col-reverse flex-row items-center justify-start relative gap-[29px]">
-        <div className="w-full mq450:w-[50%] flex items-start justify-start">
+        <div className="w-full flex items-start justify-start">
           <div className="h-full w-full flex">
             <img
               className="h-full w-[50%] rounded-l-3xs object-cover"
@@ -19,7 +19,7 @@ const EighteenIntro2: NextPage = () => {
             />
           </div>
         </div>
-        <div className="w-full mq450:w-[50%] flex flex-col items-start justify-center gap-[24px] box-border">
+        <div className="w-full flex flex-col items-start justify-center gap-[24px] box-border">
           <h3 className="m-0 self-stretch relative text-inherit font-extrabold z-[1] mq450:text-3xl mq825:text-10xl">
             MUSIC, DRINKS, FOOD + ENTERTAINMENT
           </h3>

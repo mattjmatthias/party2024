@@ -16,7 +16,7 @@ const LandingPage: NextPage = () => {
     <div className="w-full relative bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal] text-left text-[12px] text-gray-200 font-roboto">
       <SpeedInsights/>
       <HeaderFrame />
-      <section className="self-stretch flex flex-row items-start justify-center p-[80px] box-border bg-whitesmoke-200 max-w-full text-center text-10xl text-black font-futura lg:box-border">
+      <section className="self-stretch flex flex-row items-start justify-center p-[80px] mq825:p-[50px] box-border bg-whitesmoke-200 max-w-full text-center text-10xl text-black font-futura lg:box-border">
         <div className="flex flex-col items-start justify-start gap-[24px] max-w-full">
           <b className="self-stretch relative mq450:text-3xl mq825:text-10xl font-extrabold">
             6PM-LATE, SAT 14TH SEPTEMBER 2024

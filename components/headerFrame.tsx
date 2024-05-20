@@ -21,10 +21,8 @@ const HeaderFrame: NextPage = () => {
         >
           YOU’RE INVITED
         </h1>
-        <div className="w-full flex flex-row items-start justify-center mx-15 py-0 pr-px pl-0 box-border max-w-full text-5xl text-white font-small-text mq450:mt-5 mq825:mt-0">
-          <div className="w-auto relative leading-[150%] flex items-center justify-center shrink-0 z-[2] mq450:text-small ">
-            TO A LATE SUMMER PARTY IN BIRMINGHAM
-          </div>
+        <div className="w-full relative z-[2] leading-[150%] flex flex-row items-start justify-center mx-15 py-0 pr-px pl-0 box-border text-5xl text-white font-small-text mq450:mt-5 mq825:mt-0">          
+            TO A LATE SUMMER PARTY IN BIRMINGHAM          
         </div>
         <div className="w-full h-full absolute !m-[0] top-[0px] bottom-[0px]">
           <img

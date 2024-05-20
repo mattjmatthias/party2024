@@ -13,7 +13,7 @@ const Hotels: NextPage = () => {
             Hotels with the cost and distance from the venue
           </div>
         </div>
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[47px]">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
           <Hotel name="Bloc Hotel" imgSrc="/image-5@2x.png" time="13 mins" cost="£105" link="https://www.blochotels.com/"/>          
           <Hotel name="Easy Hotel" imgSrc="/image-4@2x.png" time="7 mins" cost="£122" link="https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre"/>   
           <Hotel name="Premier Inn" imgSrc="/image-3@2x.png" time="2 mins" cost="£151" link="https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-waterloo-street.html?ARRdd=14&ARRmm=09&ARRyyyy=2024&NIGHTS=1&ROOMS=1&ADULT1=2&CHILD1=0&COT1=0&INTTYP1=DB&BRAND=PI"/>   
