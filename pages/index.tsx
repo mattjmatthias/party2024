@@ -71,11 +71,11 @@ const LandingPage: NextPage = () => {
           src="/eighteen3@2x.png"
         />
       </section>
+      <Finally />
       <RsvpComponent displayMoreInfo={true} />
       <Hotels />
       <TravellingBack />
       <AfterParty />
-      <Finally />
       <RsvpComponent displayMoreInfo={false} />
       <NavigationFooter />
     </div>
