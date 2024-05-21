@@ -22,7 +22,7 @@ const LandingPage: NextPage = () => {
             SAT 14TH SEPTEMBER 2024, 6PM-LATE
           </b>
           <div className="self-stretch relative text-3xl leading-[150%] tracking-[-0.75px] font-small-text text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
-            It’s Matt + Steve’s 45th birthday this year, so we’re throwing a party to celebrate!
+            It’s Matt and Steve’s 45th birthday this year, so we’re throwing a party to celebrate!
           </div>
         </div>
       </section>
