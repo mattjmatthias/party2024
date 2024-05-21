@@ -37,31 +37,31 @@ const LandingPage: NextPage = () => {
       </div>
       <section className="w-auto overflow-x-auto flex flex-row items-start justify-start max-w-full">
         <img
-          className="self-stretch w-[515px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
+          className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
           loading="lazy"
           alt=""
           src="/4e0d4619f9fd773679a05b384bbeeba8-1@2x.png"
         />
         <img
-          className="self-stretch w-[581px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[1]"
+          className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[1]"
           loading="lazy"
           alt=""
           src="/eighteen7@2x.png"
         />
         <img
-          className="self-stretch w-[360px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
+          className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
           loading="lazy"
           alt=""
           src="/img-0574-1@2x.png"
         />
         <img
-          className="self-stretch w-[232px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[3]"
+          className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[3]"
           loading="lazy"
           alt=""
           src="/img-1468-1@2x.png"
         />
         <img
-          className="self-stretch w-[597px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[4]"
+          className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[4]"
           loading="lazy"
           alt=""
           src="/eighteen1@2x.png"

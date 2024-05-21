@@ -74,6 +74,7 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
               className="w-[17px] h-[18px] relative object-cover mix-blend-luminosity"
               alt=""
               src="/image-13@2x.png"
+              style={{ filter: 'brightness(100%) saturate(0%)' }}
             />
           </div>
           <div

@@ -15,14 +15,14 @@ const AfterParty: NextPage = () => {
           </div>
         </div>
         <div className="w-full flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border gap-[30px] max-w-full mq450:pb-[34px] mq450:box-border">
-          <div className="flex flex-row items-start justify-start py-0 px-0.5">
+          <div id="dancing" className="flex flex-row items-start justify-start py-0 px-0.5">
             <img
               className="h-[50px] w-[50px] relative object-cover mix-blend-luminosity"
               alt=""
               src="/dance@2x.png"
             />
           </div>
-          <div id="dancing" className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
+          <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
             <VenueDetails
               imgSrc="/image-7@2x.png"
               title="Tonight Josephine"

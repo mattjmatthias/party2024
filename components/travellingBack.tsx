@@ -17,8 +17,8 @@ const TravellingBack: NextPage = () => {
             </div>
           </div>
         </div>
-        <div id="trains" className="w-auto flex flex-col items-start justify-start gap-[16px]  text-5xl font-futura">          
-          <div className="self-stretch flex-1 flex flex-row items-start justify-between max-w-full gap-[20px] flex-wrap">
+        <div id="trains" className="w-auto flex flex-col items-start justify-start gap-[16px] text-5xl font-futura">          
+          <div className="self-stretch flex-1 flex flex-row items-start justify-between max-w-full gap-[40px] flex-wrap">
             <div className="w-auto flex flex-col items-start justify-start gap-[16px] mq825:pb-12">
               <LastTrainComponent title="Stafford" depart="10:33pm" arrive="11:08pm" prodepartinWidth="57px"  />              
               <LastTrainComponent title="Stoke" depart="10:01" arrive="10:47pm" prodepartinWidth="57px" />              

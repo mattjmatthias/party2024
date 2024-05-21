@@ -58,8 +58,10 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
     displayMoreInfo ? "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-0 pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:box-border" :
     "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border pb-[99px]";
 
+  const id = displayMoreInfo ? "" : "rsvp";
+
   return (
-    <form id="rsvp" onSubmit={onSubmit} 
+    <form id={id} onSubmit={onSubmit} 
       className={headerClasses}>
       <div className="w-[1440px] h-[651px] relative bg-black hidden max-w-full" />
       <h1 className="m-0 w-[842px] relative text-45xl tracking-[-5px] font-bold font-futura text-center inline-block max-w-full z-[1] mq450:text-19xl mq825:text-32xl"
@@ -161,7 +163,7 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
         </div>
       </div>
       <div className="w-[842px] flex flex-row items-start justify-center py-0 pr-px pl-0 box-border max-w-full">
-        <button type="submit" className="cursor-pointer [border:none] py-[6.5px] px-[45.5px] bg-white shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg flex flex-row items-start justify-start z-[1] hover:bg-gainsboro-100">
+        <button type="submit" className="cursor-pointer [border:none] py-[6.5px] px-[45.5px] mt-8 bg-white shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg flex flex-row items-start justify-start z-[1] hover:bg-gainsboro-100">
             {isSubmitting ? (
               <Lottie 
                 options={defaultOptions}
