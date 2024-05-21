@@ -4,7 +4,7 @@ import NavigationLinks from "./navigation-links";
 const Finally: NextPage = () => {
   return (
     <section className="self-stretch bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start p-[80px] pb-[40px] box-border gap-[32px] max-w-full z-[1] text-left text-21xl text-black font-small-text mq825:p-[50px] mq825:gap-[16px]">
-  <h2 className="m-0 w-full relative text-inherit leading-[110%] font-black inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
+  <h2 id="finally" className="m-0 w-full relative text-inherit leading-[110%] font-black inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
     Finally....
   </h2>
   <div className="self-stretch w-full gap-[5px] text-5xl">

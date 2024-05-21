@@ -6,6 +6,7 @@ export type VenueDetailsType = {
   title?: string;
   mins?: string;
   am?: string;
+  link?: string;
 
   /** Style props */
   propPadding?: CSSProperties["padding"];
@@ -19,6 +20,7 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
   title,
   mins,
   am,
+  link,
   propPadding,
   propDisplay,
   propMinWidth,
@@ -45,9 +47,12 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
 
   return (
     <div
-      className="flex flex-col items-start justify-start py-0 pr-[5px] pl-0 gap-[9px] text-left text-5xl text-black font-futura  mq825:min-w-[145px] mq825:max-w-[145px] min-w-[190px] max-w-[190px]"
+      className="flex flex-col items-start justify-start py-0 pr-[5px] pl-0 gap-[9px] text-left text-5xl text-black font-futura  mq825:min-w-[165px] mq825:max-w-[165px] min-w-[190px] max-w-[190px]"
       style={venueDetailsStyle}
     >
+      <a href={link} 
+                className="no-underline text-black"
+                target="_blank" rel="noopener noreferrer">
       <img
         className="w-[196px] h-[194px] mq825:w-[150px] mq825:h-[150px] relative object-cover rounded-3xs"
         loading="lazy"
@@ -89,6 +94,7 @@ const VenueDetails: NextPage<VenueDetailsType> = ({
           </div>
         </div>
       </div>
+      </a>
     </div>
   );
 };

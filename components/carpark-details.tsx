@@ -1,25 +1,25 @@
 import type { NextPage } from "next";
 
-export type TaxiDetailsType = {
+export type CarParkDetailsType = {
   title?: string;
   image14?: string;
   mins?: string;
   price?: string;
 };
 
-const TaxiDetails: NextPage<TaxiDetailsType> = ({
+const CarParkDetails: NextPage<CarParkDetailsType> = ({
   title,
   image14,
   mins,
   price,
 }) => {
   return (
-    <div className="w-[260px] flex flex-row items-end justify-start gap-[8px]">
+    <div className="w-[330px] flex flex-row items-end justify-start gap-[8px]">
       <div className="flex flex-col items-start justify-end pt-0 pb-2 pr-3 pl-0">
         <img
           className="w-[40px] h-[40px] relative object-contain mix-blend-luminosity"
           alt=""
-          src="/frontaltaxicab@2x.png"
+          src="/parked-car.png"
         />
       </div>
       <div className="flex-1 flex flex-col items-start justify-start text-left text-3xl text-black font-futura">
@@ -28,18 +28,19 @@ const TaxiDetails: NextPage<TaxiDetailsType> = ({
             {title}
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[5px] mt-[-5px]">
-          <div className="flex flex-col items-start justify-start pt-[4px] px-0 pb-0">
+        <div className="flex flex-row  gap-[5px] mt-[-5px]">
+          <div className="flex flex-col items-start justify-start pt-[6px] px-0 pb-0">
             <img
-              className="w-[17px] h-[19px] relative object-cover"
+              className="w-[17px] h-[17px] relative object-cover mix-blend-luminosity"
               alt=""
-              src={image14}
+              src="/image-13@2x.png"
+              style={{ filter: "brightness(100%) saturate(0%)" }}
             />
           </div>
-          <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-regular mq450:text-lgi mq450:leading-[29px]">
+          <div className="flex-1 min-w-[90px] relative tracking-[-0.03em] leading-[150%] font-regular mq450:text-lgi mq450:leading-[29px]">
             {mins}
           </div>
-          <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-regular mq450:text-lgi mq450:leading-[29px]">
+          <div className="flex-2 relative tracking-[-0.03em] leading-[150%] font-regular mq450:text-lgi mq450:leading-[29px]">
             {price}
           </div>
         </div>
@@ -48,4 +49,4 @@ const TaxiDetails: NextPage<TaxiDetailsType> = ({
   );
 };
 
-export default TaxiDetails;
+export default CarParkDetails;

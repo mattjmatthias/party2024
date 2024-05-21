@@ -1,11 +1,66 @@
 import type { NextPage } from "next";
-import { useState } from "react";
+import React, { useState, useRef } from "react";
+import Lottie from "react-lottie";
+import sentLottie from "../public/sent.json";// Re
+import downLottie from "../public/down.json";
 
-const RsvpComponent: NextPage = () => {
+const FORMSPARK_ACTION_URL = "https://submit-form.com/TsRSWvojS";
+
+interface RsvpProps {
+  displayMoreInfo: boolean;
+}
+
+const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
   const [selectedOption, setSelectedOption] = useState('');
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+
+  const onSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    /*await fetch(FORMSPARK_ACTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        message,
+      }),
+    });*/
+
+    setTimeout(() => {
+      setIsAnimationComplete(true);
+    }, 100); // Adjust the timeout based on your animation duration
+  };
+
+  const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: sentLottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
+  const defaultDownOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: downLottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const headerClasses = 
+    displayMoreInfo ? "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-0 pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:box-border" :
+    "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border pb-[99px]";
 
   return (
-    <form action="https://submit-form.com/TsRSWvojS" className="m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-[99px] pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border">
+    <form id="rsvp" onSubmit={onSubmit} 
+      className={headerClasses}>
       <div className="w-[1440px] h-[651px] relative bg-black hidden max-w-full" />
       <h1 className="m-0 w-[842px] relative text-45xl tracking-[-5px] font-bold font-futura text-center inline-block max-w-full z-[1] mq450:text-19xl mq825:text-32xl"
         style={{color: "transparent", WebkitTextStroke: "2px white"}}>
@@ -107,11 +162,34 @@ const RsvpComponent: NextPage = () => {
       </div>
       <div className="w-[842px] flex flex-row items-start justify-center py-0 pr-px pl-0 box-border max-w-full">
         <button type="submit" className="cursor-pointer [border:none] py-[6.5px] px-[45.5px] bg-white shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg flex flex-row items-start justify-start z-[1] hover:bg-gainsboro-100">
-          <div className="relative text-base leading-[28px] font-semibold font-small-text text-black text-left inline-block min-w-[40px]">
-            Send
-          </div>
-        </button>
+            {isSubmitting ? (
+              <Lottie 
+                options={defaultOptions}
+                height={30}
+                width={30}
+                eventListeners={[
+                  {
+                    eventName: 'complete',
+                    callback: () => setIsAnimationComplete(true),
+                  },
+                ]}
+              />
+            ) : (
+              <div className="relative text-base leading-[28px] font-semibold font-small-text text-black text-left inline-block min-w-[40px]">
+                Send
+              </div>
+            )}
+          </button>
       </div>
+
+      {displayMoreInfo && 
+        <>
+          <h2 className="mb-0 mt-10 w-[625px] font-small-text text-center text-13xl text-white relative leading-[110%] font-semibold inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
+            but there's more...
+            <Lottie options={defaultDownOptions} height={100} width={100} />          
+          </h2>          
+        </>
+      }
     </form>
   );
 };

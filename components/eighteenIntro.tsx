@@ -9,7 +9,7 @@ const EighteenIntro: NextPage = () => {
             <h3 className="m-0 self-stretch relative text-inherit font-extrabold font-inherit z-[1] mq450:text-3xl mq825:text-10xl">
               EIGHTEEN, COLMORE ROW
             </h3>
-            <div className="self-stretch relative text-3xl leading-[150%] tracking-[-0.75px] font-small-text text-gainsboro-200 z-[1] mq450:text-lgi mq450:leading-[29px]">
+            <div className="self-stretch relative  leading-[150%] text-3xl tracking-[-0.75px] font-small-text text-gainsboro-200 z-[1] mq450:text-lgi mq450:leading-[29px]">
               It’s in Birmingham City Centre, on the 18th floor of the new 103 Colmore Row building.
             </div>
           </div>

@@ -9,12 +9,12 @@ import AfterParty from "../components/after-party";
 import Finally from "../components/finally";
 import RsvpComponent from "../components/rsvpComponent";
 import NavigationFooter from "../components/navigation-footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const LandingPage: NextPage = () => {
   return (
     <div className="w-full relative bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal] text-left text-[12px] text-gray-200 font-roboto">
-      <SpeedInsights/>
+      <SpeedInsights />
       <HeaderFrame />
       <section className="self-stretch flex flex-row items-start justify-center p-[80px] mq825:p-[50px] box-border bg-whitesmoke-200 max-w-full text-center text-10xl text-black font-futura lg:box-border">
         <div className="flex flex-col items-start justify-start gap-[24px] max-w-full">
@@ -22,7 +22,8 @@ const LandingPage: NextPage = () => {
             6PM-LATE, SAT 14TH SEPTEMBER 2024
           </b>
           <div className="self-stretch relative text-3xl leading-[150%] tracking-[-0.75px] font-small-text text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
-            It’s Matt + Steve’s 45th birthday this year, so we’re throwing a party to celebrate!
+            It’s Matt + Steve’s 45th birthday this year, so we’re throwing a
+            party to celebrate!
           </div>
         </div>
       </section>
@@ -30,7 +31,8 @@ const LandingPage: NextPage = () => {
       <EighteenIntro2 />
       <div className="self-stretch flex flex-row items-end justify-end pt-0 pb-2.5 pr-5 box-border max-w-full">
         <div className="relative leading-[150%] flex items-end shrink-0 max-w-full tracking-[-0.2px] font-small-text text-right">
-          *Vegan and vegetarian options will be available, and allergies accomodated
+          *Vegan and vegetarian options will be available, and allergies
+          accomodated
         </div>
       </div>
       <section className="w-auto overflow-x-auto flex flex-row items-start justify-start max-w-full">
@@ -71,13 +73,13 @@ const LandingPage: NextPage = () => {
           src="/eighteen3@2x.png"
         />
       </section>
-      <RsvpComponent />
+      <RsvpComponent displayMoreInfo={true} />
       <Hotels />
       <TravellingBack />
       <AfterParty />
       <Finally />
-        <RsvpComponent />
-        <NavigationFooter />
+      <RsvpComponent displayMoreInfo={false} />
+      <NavigationFooter />
     </div>
   );
 };
