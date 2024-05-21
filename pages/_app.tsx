@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Party2024</title>
+        <title>#m&s-summer-party-2024</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
