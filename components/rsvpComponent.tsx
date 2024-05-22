@@ -72,8 +72,8 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
   }
 
   const headerClasses = 
-    displayMoreInfo ? "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-0 pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:box-border" :
-    "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border pb-[99px]";
+    displayMoreInfo ? "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-0 box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:box-border" :
+    "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border pb-[99px]";
 
   const id = displayMoreInfo ? "" : "rsvp";
 
