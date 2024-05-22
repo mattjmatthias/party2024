@@ -20,6 +20,7 @@ const TravellingBack: NextPage = () => {
         <div id="trains" className="w-auto flex flex-col items-start justify-start gap-[16px] text-5xl font-futura">          
           <div className="self-stretch flex-1 flex flex-row items-start justify-between max-w-full gap-[40px] flex-wrap">
             <div className="w-auto flex flex-col items-start justify-start gap-[16px] mq825:pb-12">
+              <h6 className="m-0 text-darkslategray-300">TRAINS</h6>
               <LastTrainComponent title="Stafford" depart="10:33pm" arrive="11:08pm" prodepartinWidth="57px"  />              
               <LastTrainComponent title="Stoke" depart="10:01" arrive="10:47pm" prodepartinWidth="57px" />              
               <LastTrainComponent title="Derby" depart="10:49pm" arrive="11:31pm" prodepartinWidth="57px"  />        
@@ -28,7 +29,8 @@ const TravellingBack: NextPage = () => {
               <LastTrainComponent title="London Euston" depart="10:06pm" arrive="12:34pm" prodepartinWidth="57px"  />  
             </div>
             <div id="taxis" className="w-auto flex-1 flex flex-row items-end justify-start mq825:pb-12">              
-              <div className="flex flex-col items-start justify-start gap-[16px]">                            
+              <div className="flex flex-col items-start justify-start gap-[16px]">  
+              <h6 className="m-0 text-darkslategray-300">TAXIS</h6>
                 <TaxiDetails title="Stone" image14="/image-14@2x.png" mins="47 mins" price="£75"/>
                 <TaxiDetails title="Rugby" image14="/image-14@2x.png" mins="42 mins" price="£67" />  
                 <TaxiDetails title="Stoke" image14="/image-14@2x.png" mins="51 mins" price="£83" />  
@@ -37,7 +39,8 @@ const TravellingBack: NextPage = () => {
               </div>
             </div>
             <div id="carparks" className="w-auto flex-1 flex flex-row items-end justify-start">              
-              <div className="flex flex-col items-start justify-start gap-[16px]">                            
+              <div className="flex flex-col items-start justify-start gap-[16px]">       
+                <h6 className="m-0 text-darkslategray-300">CAR PARKS</h6>
                 <CarParkDetails title="Snow Hill" image14="/image-14@2x.png" mins="8 mins" price="£14 for 8 hours"/>
                 <CarParkDetails title="Grand Central" image14="/image-14@2x.png" mins="9 mins" price="£12 for 8 hours" />  
                 <CarParkDetails title="Town Hall" image14="/image-14@2x.png" mins="10 mins" price="£14 for 8 hours" />  

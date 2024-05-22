@@ -90,13 +90,13 @@ const NavigationFooter: NextPage = () => {
               href="/#dancing"
               className="no-underline text-black self-stretch relative leading-[150%] font-medium"
             >
-              After Party Dancing
+              Dancing After
             </Link>
             <Link
               href="/#cocktails"
               className="no-underline text-black elf-stretch relative leading-[150%] font-medium"
             >
-              After Party Drinks
+              Cocktails After
             </Link>
           </div>
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[140px]">

@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 const EighteenIntro2: NextPage = () => {
   return (
     <section className="self-stretch flex flex-col items-start justify-start p-[80px] mq825:p-[50px] box-border max-w-full text-left text-10xl text-black font-futura mq825:box-border">
-      <div className="w-full flex mq825:flex-col-reverse flex-row items-center justify-start relative gap-[29px]">
+      <div className="w-full flex mq825:flex-col-reverse flex-row items-center justify-start relative gap-[118px] mq825:gap-[29px] mq1425:gap-[59px] ">
         <div className="w-full flex items-start justify-start">
           <div className="h-full w-full flex">
             <img

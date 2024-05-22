@@ -15,10 +15,23 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  const [name, setName] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [selectedError, setSelectedError] = useState("");
 
   const onSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
+
+    if (!name || selectedOption === '') {
+      !name && setNameError("You forgot to give your name");
+      selectedOption === '' && setSelectedError("You forgot to say if you're coming or not");
+
+      return;
+    }    
+
     setIsSubmitting(true);
+    setNameError("");
+    setSelectedError("");
 
     /*await fetch(FORMSPARK_ACTION_URL, {
       method: "POST",
@@ -54,6 +67,10 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
     },
   };
 
+  function classNames(...classes: any[]) {
+    return classes.filter(Boolean).join(" ");
+  }
+
   const headerClasses = 
     displayMoreInfo ? "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pb-0 pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:box-border" :
     "m-0 self-stretch bg-black flex flex-col items-center justify-start pt-[70px] pr-5 pl-[76px] box-border gap-[33.5px] max-w-full lg:pl-[38px] lg:box-border mq825:gap-[17px] mq825:pt-[45px] mq825:pb-16 mq825:box-border pb-[99px]";
@@ -75,16 +92,23 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
               <div className="flex-1 flex flex-col items-start justify-start gap-[17px] min-w-[203px]">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[1px]">
                   <div className="w-[285px] flex flex-row items-start justify-start py-0 px-[7px] box-border">
-                    <div className="flex-1 relative text-base leading-[150%] font-small-text text-white text-left z-[1]">
+                    <div className={classNames("flex-1 relative text-base leading-[150%] font-small-text text-left z-[1]",
+                      nameError ? "text-red-500" : "text-white"                      
+                    )}>
                       Name
                     </div>
                   </div>
                   <input
-                    className="[outline:none] bg-[transparent] self-stretch h-[45px] relative font-small-text p-3 text-base text-white text-left rounded-lg box-border min-w-[187px] z-[1] border-[2px] border-solid border-white"
+                    className={classNames("[outline:none] bg-[transparent] self-stretch h-[45px] relative font-small-text p-3 text-base text-white text-left rounded-lg box-border min-w-[187px] z-[1] border-[2px] border-solid",
+                      nameError ? "border-red-500" : "border-white"
+                    )}
                     type="text"
                     id="name"
                     name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
+                  {nameError && <div className="text-red-500 font-noto-sans text-base pt-2">{nameError}</div>}
                 </div>
               </div>
               <div className="flex-1 flex flex-col items-start justify-start gap-[17px] min-w-[203px]">
@@ -136,11 +160,15 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
               id="yes"
               name="attendance"
               value="yes"
-              className="relative rounded-full box-border z-[1] border-[0px] border-solid border-white"
+              className={classNames("relative rounded-full box-border z-[1] border-[0px] border-solid h-5 w-5",
+                selectedError ? "border-red-500" : "border-white"
+              )}
               checked={selectedOption === 'yes'}
               onChange={(e) => setSelectedOption(e.target.value)}
             />
-            <label htmlFor="yes" className="flex-1 relative text-base leading-[150%] font-small-text text-white text-left z-[1]">
+            <label htmlFor="yes" className={classNames("flex-1 relative text-base leading-[150%] font-small-text  text-left z-[1] pt-1",
+              selectedError ? "text-red-500" : "text-white"
+            )}>
               Yes, I’m coming
             </label>
           </div>
@@ -150,16 +178,21 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
               id="no"
               name="attendance"
               value="no"
-              className=" relative rounded-full box-border z-[1] border-[0px] border-solid border-white"
+              className={classNames("relative rounded-full box-border z-[1] border-[0px] border-solid h-5 w-5",
+                selectedError ? "border-red-500" : "border-white"
+              )}
               checked={selectedOption === 'no'}
               onChange={(e) => setSelectedOption(e.target.value)}
             />
-            <label htmlFor="no" className="flex-1 relative text-base leading-[150%] font-small-text text-white text-left z-[1]">
+            <label htmlFor="no" className={classNames("flex-1 relative text-base leading-[150%] font-small-text  text-left z-[1] pt-1",
+              selectedError ? "text-red-500" : "text-white"
+            )}>
               Sorry, I can’t make it
             </label>
           </div>
-        </div>
+        </div>          
       </div>
+        {selectedError && <div className="text-red-500 font-noto-sans text-base m-0">{selectedError}</div>}
         </div>
       </div>
       <div className="w-[842px] flex flex-row items-start justify-center py-0 pr-px pl-0 box-border max-w-full">

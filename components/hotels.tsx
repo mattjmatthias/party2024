@@ -10,7 +10,7 @@ const Hotels: NextPage = () => {
             If you’re staying over
           </h2>
           <div className="self-stretch relative leading-[150%] text-xl tracking-[-0.75px] font-small-text text-darkslategray-200 mq450:text-lgi mq450:leading-[29px]">
-            Hotels with cost and walking time from the venue
+            Hotels in walking distance to the venue and average cost for 1 night
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
