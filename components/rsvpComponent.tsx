@@ -19,30 +19,37 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
   const [nameError, setNameError] = useState("");
   const [selectedError, setSelectedError] = useState("");
 
-  const onSubmit = async (e: { preventDefault: () => void; }) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!name || selectedOption === '') {
-      !name && setNameError("You forgot to give your name");
-      selectedOption === '' && setSelectedError("You forgot to say if you're coming or not");
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const formDataObject: Record<string, any> = {};
 
+    formData.forEach((value, key) => {
+      formDataObject[key] = value;
+    });
+
+    if (!formDataObject.name || !formDataObject.attendance) {
+      if (!formDataObject.name) setNameError("You forgot to give your name");
+      if (!formDataObject.attendance) setSelectedError("You forgot to say if you're coming or not");
+      
       return;
-    }    
+    }
 
     setIsSubmitting(true);
     setNameError("");
     setSelectedError("");
-
-    /*await fetch(FORMSPARK_ACTION_URL, {
+        
+    await fetch(FORMSPARK_ACTION_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify({
-        message,
-      }),
-    });*/
+      body: JSON.stringify(formDataObject),
+    });
 
     setTimeout(() => {
       setIsAnimationComplete(true);
