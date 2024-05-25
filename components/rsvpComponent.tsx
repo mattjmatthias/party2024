@@ -33,7 +33,7 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
     setNameError("");
     setSelectedError("");
 
-    /*await fetch(FORMSPARK_ACTION_URL, {
+    await fetch(FORMSPARK_ACTION_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const RsvpComponent:NextPage<RsvpProps> = ({displayMoreInfo}) => {
       body: JSON.stringify({
         message,
       }),
-    });*/
+    });
 
     setTimeout(() => {
       setIsAnimationComplete(true);
