@@ -72,11 +72,11 @@ const LandingPage: NextPage = () => {
         />
       </section>
       <Finally />
-      <RsvpComponent displayMoreInfo={true} />
+      <RsvpComponent displayMoreInfo={true} id="1"/>
       <Hotels />
       <TravellingBack />
       <AfterParty />
-      <RsvpComponent displayMoreInfo={false} />
+      <RsvpComponent displayMoreInfo={false} id="2" />
       <NavigationFooter />
     </div>
   );
