@@ -24,7 +24,7 @@ const EighteenIntro: NextPage = () => {
               </div>
             </div>
             <div className="self-stretch relative  leading-[150%] text-3xl tracking-[-0.75px] font-small-text text-gainsboro-200 z-[1] mq450:text-lgi mq450:leading-[29px]">
-              Eighteen is a private bar and outdoor terrace on the 18th floor of the new 103 Colmore Row building in Birmingham City Centre.
+              Eighteen is a private bar and outdoor terrace on the 18th floor of the new 103 Colmore Row building in Birmingham City Centre
             </div>
           </div>
         </div>
