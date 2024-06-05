@@ -22,6 +22,10 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (isSubmitting) {
+      return;
+    }
+
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
     const formDataObject: Record<string, any> = {};
@@ -41,6 +45,7 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
     setNameError("");
     setSelectedError("");
 
+    /*
     await fetch(FORMSPARK_ACTION_URL, {
       method: "POST",
       headers: {
@@ -49,7 +54,7 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
       },
       body: JSON.stringify(formDataObject),
     });
-
+    */
     setTimeout(() => {
       setIsAnimationComplete(true);
     }, 100); // Adjust the timeout based on your animation duration
@@ -83,9 +88,10 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
 
   const formId = displayMoreInfo ? "" : `rsvp`;
 
-  return (
+  return (    
     <form id={formId} onSubmit={onSubmit} className={headerClasses}>
       <div className="w-[1440px] h-[651px] relative bg-black hidden max-w-full" />
+      { !displayMoreInfo && <>
       <h1
         className="m-0 w-[842px] relative text-45xl tracking-[-5px] font-bold font-futura text-center inline-block max-w-full z-[1] mq450:text-19xl mq825:text-32xl"
         style={{ color: "transparent", WebkitTextStroke: "2px white" }}
@@ -219,7 +225,9 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
       <div className="w-[842px] flex flex-row items-start justify-center py-0 pr-px pl-0 box-border max-w-full">
         <button
           type="submit"
-          className="cursor-pointer [border:none] py-[6.5px] px-[45.5px] mt-8 bg-white shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg flex flex-row items-start justify-start z-[1] hover:bg-gainsboro-100"
+          disabled={isSubmitting}
+          className={classNames("cursor-pointer [border:none] py-[6.5px] px-[45.5px] mt-8 bg-white shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-lg flex flex-row items-start justify-start z-[1]", 
+            isSubmitting ? "" : "hover:bg-gainsboro-100")}
         >
           {isSubmitting ? (
             <Lottie
@@ -240,10 +248,11 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
           )}
         </button>
       </div>
-
+      </>
+      }
       {displayMoreInfo && (
         <>
-          <h2 className="mb-0 mt-10 w-[625px] font-small-text text-center text-13xl text-white relative leading-[110%] font-semibold inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
+          <h2 className="mb-0 mt-0 w-[625px] font-small-text text-center text-13xl text-white relative leading-[110%] font-semibold inline-block max-w-full mq450:text-5xl mq450:leading-[26px] mq825:text-13xl mq825:leading-[35px]">
             but there's more...
             <Lottie options={defaultDownOptions} height={100} width={100} />
           </h2>
