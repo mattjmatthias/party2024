@@ -44,8 +44,7 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
     setIsSubmitting(true);
     setNameError("");
     setSelectedError("");
-
-    /*
+    
     await fetch(FORMSPARK_ACTION_URL, {
       method: "POST",
       headers: {
@@ -54,7 +53,7 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
       },
       body: JSON.stringify(formDataObject),
     });
-    */
+    
     setTimeout(() => {
       setIsAnimationComplete(true);
     }, 100); // Adjust the timeout based on your animation duration
