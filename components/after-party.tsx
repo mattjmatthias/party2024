@@ -24,21 +24,21 @@ const AfterParty: NextPage = () => {
           </div>
           <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
             <VenueDetails
-              imgSrc="/image-7@2x.png"
+              imgSrc="/image-7@2x.jpg"
               title="Tonight Josephine"
               mins="5 mins"
               am="2:00am"
               link="https://www.tonightjosephine.co.uk/"
             />
             <VenueDetails
-              imgSrc="/image-8@2x.png"
+              imgSrc="/image-8@2x.jpg"
               title="Rosies"
               mins="12 mins"
               am="4:00am"
               link="https://www.rosiesclubs.co.uk/birmingham"
             />
             <VenueDetails
-              imgSrc="/image-6@2x.png"
+              imgSrc="/image-6@2x.jpg"
               title="Popworld"
               mins="13 mins"
               am="3:00am"
@@ -54,21 +54,21 @@ const AfterParty: NextPage = () => {
           />
           <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">            
             <VenueDetails
-              imgSrc="/image-9@2x.png"
+              imgSrc="/image-9@2x.jpg"
               title="Dirty Martini"
               mins="2 mins"
               am="2:30am"
               link="https://www.dirtymartini.uk.com/bars/birmingham"
             />
             <VenueDetails
-              imgSrc="/image-12@2x.png"
+              imgSrc="/image-12@2x.jpg"
               title="The Alchemist"
               mins="3 mins"
               am="3:00am"
               link="https://thealchemistbars.com/venues/birmingham-colmore-row/"
             />
             <VenueDetails
-              imgSrc="/image-10@2x.png"
+              imgSrc="/image-10@2x.jpg"
               title="The Cocktail Club"
               mins="4 mins"
               am="3:00am"

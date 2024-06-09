@@ -14,11 +14,11 @@ const Hotels: NextPage = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[54.8px] text-3xl font-futura mq825:gap-[37px]">
-          <Hotel name="Bloc Hotel" imgSrc="/image-5@2x.png" time="13 mins" cost="£105" baseLink="https://www.blochotels.com/" link="https://www.blochotels.com/"/>          
-          <Hotel name="Easy Hotel" imgSrc="/image-4@2x.png" time="7 mins" cost="£122" baseLink="https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre" link="https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre"/>   
-          <Hotel name="Premier Inn" imgSrc="/image-3@2x.png" time="2 mins" cost="£151" baseLink="https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-waterloo-street.html" link="https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-waterloo-street.html?ARRdd=14&ARRmm=09&ARRyyyy=2024&NIGHTS=1&ROOMS=1&ADULT1=2&CHILD1=0&COT1=0&INTTYP1=DB&BRAND=PI"/>   
-          <Hotel name="Hotel du Vin" imgSrc="/image-2@2x.png" time="3 mins" cost="£241" baseLink="https://www.hotelduvin.com/" link="https://www.hotelduvin.com/book/room"/>   
-          <Hotel name="The Grand Hotel" imgSrc="/image-1@2x.png" time="3 mins" cost="£332" baseLink="https://www.thegrandhotelbirmingham.co.uk" link="https://book.thegrandhotelbirmingham.co.uk/?adult=2&arrive=2024-09-14&chain=9822&child=0&config=initialConfig&currency=GBP&depart=2024-09-15&hotel=30776&level=hotel&locale=en-GB&rooms=1&theme=initialTheme2"/>   
+          <Hotel name="Bloc Hotel" imgSrc="/image-5@2x.jpg" time="13 mins" cost="£105" baseLink="https://www.blochotels.com/" link="https://www.blochotels.com/"/>          
+          <Hotel name="Easy Hotel" imgSrc="/image-4@2x.jpg" time="7 mins" cost="£122" baseLink="https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre" link="https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre"/>   
+          <Hotel name="Premier Inn" imgSrc="/image-3@2x.jpg" time="2 mins" cost="£151" baseLink="https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-waterloo-street.html" link="https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-waterloo-street.html?ARRdd=14&ARRmm=09&ARRyyyy=2024&NIGHTS=1&ROOMS=1&ADULT1=2&CHILD1=0&COT1=0&INTTYP1=DB&BRAND=PI"/>   
+          <Hotel name="Hotel du Vin" imgSrc="/image-2@2x.jpg" time="3 mins" cost="£241" baseLink="https://www.hotelduvin.com/" link="https://www.hotelduvin.com/book/room"/>   
+          <Hotel name="The Grand Hotel" imgSrc="/image-1@2x.jpg" time="3 mins" cost="£332" baseLink="https://www.thegrandhotelbirmingham.co.uk" link="https://book.thegrandhotelbirmingham.co.uk/?adult=2&arrive=2024-09-14&chain=9822&child=0&config=initialConfig&currency=GBP&depart=2024-09-15&hotel=30776&level=hotel&locale=en-GB&rooms=1&theme=initialTheme2"/>   
         </div>
       </div>
     </section>

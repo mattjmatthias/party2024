@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import "./global.css";

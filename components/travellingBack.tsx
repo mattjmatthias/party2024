@@ -41,10 +41,10 @@ const TravellingBack: NextPage = () => {
             <div id="carparks" className="w-auto flex-1 flex flex-row items-end justify-start">              
               <div className="flex flex-col items-start justify-start gap-[16px]">       
                 <h6 className="m-0 text-darkslategray-300">CAR PARKS</h6>
-                <CarParkDetails title="Snow Hill" image14="/image-14@2x.png" mins="8 mins" price="£14 for 8 hours"/>
-                <CarParkDetails title="Grand Central" image14="/image-14@2x.png" mins="9 mins" price="£12 for 8 hours" />  
-                <CarParkDetails title="Town Hall" image14="/image-14@2x.png" mins="10 mins" price="£14 for 8 hours" />  
-                <CarParkDetails title="The Mailbox" image14="/image-14@2x.png" mins="12 mins" price="£21 for 8 hours" />                  
+                <CarParkDetails title="Snow Hill" image14="/image-14@2x.jpg" mins="8 mins" price="£14 for 8 hours"/>
+                <CarParkDetails title="Grand Central" image14="/image-14@2x.jpg" mins="9 mins" price="£12 for 8 hours" />  
+                <CarParkDetails title="Town Hall" image14="/image-14@2x.jpg" mins="10 mins" price="£14 for 8 hours" />  
+                <CarParkDetails title="The Mailbox" image14="/image-14@2x.jpg" mins="12 mins" price="£21 for 8 hours" />                  
               </div>
             </div>
           </div>

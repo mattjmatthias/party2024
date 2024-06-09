@@ -34,7 +34,7 @@ const EighteenIntro: NextPage = () => {
               className="flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover z-[1] mq825:min-w-full"
               loading="lazy"
               alt=""
-              src="/eighteen4@2x.png"
+              src="/eighteen4@2x.jpg"
             />
           </a>
         </div>

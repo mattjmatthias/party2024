@@ -9,13 +9,13 @@ const EighteenIntro2: NextPage = () => {
             <img
               className="h-full w-[50%] rounded-l-3xs object-cover"
               alt=""
-              src="/408777898-745972147554071-967985607280608115-n-1@2x.png"
+              src="/408777898-745972147554071-967985607280608115-n-1@2x.jpg"
             />
             <img
               className="h-full w-[50%] rounded-r-3xs object-cover z-[1]"
               loading="lazy"
               alt=""
-              src="/437565977-394276430242193-4392705109723593379-n-1@2x.png"
+              src="/437565977-394276430242193-4392705109723593379-n-1@2x.jpg"
             />
           </div>
         </div>

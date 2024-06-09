@@ -38,37 +38,37 @@ const LandingPage: NextPage = () => {
           className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
           loading="lazy"
           alt=""
-          src="/4e0d4619f9fd773679a05b384bbeeba8-1@2x.png"
+          src="/4e0d4619f9fd773679a05b384bbeeba8-1@2x.jpg"
         />
         <img
           className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[1]"
           loading="lazy"
           alt=""
-          src="/eighteen7@2x.png"
+          src="/eighteen7@2x.jpg"
         />
         <img
           className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[2]"
           loading="lazy"
           alt=""
-          src="/img-0574-1@2x.png"
+          src="/img-0574-1@2x.jpg"
         />
         <img
           className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[3]"
           loading="lazy"
           alt=""
-          src="/img-1468-1@2x.png"
+          src="/img-1468-1@2x.jpg"
         />
         <img
           className="self-stretch w-auto relative shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[4]"
           loading="lazy"
           alt=""
-          src="/eighteen1@2x.png"
+          src="/eighteen1@2x.jpg"
         />
         <img
           className="self-stretch w-[819px] relative max-h-full shrink-0 object-cover max-h-[388px] mq825:max-h-[300px] mq450:max-h-[250px] [debug_commit:1de1738] z-[5]"
           loading="lazy"
           alt=""
-          src="/eighteen3@2x.png"
+          src="/eighteen3@2x.jpg"
         />
       </section>
       <Finally />

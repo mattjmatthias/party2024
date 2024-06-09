@@ -28,7 +28,7 @@ const HeaderFrame: NextPage = () => {
           <img
             className="absolute top-[0px] left-[0px] w-full h-full object-cover"
             alt=""
-            src="/333762309-981858436556752-9151091461896511175-n-1@2x.png"
+            src="/333762309-981858436556752-9151091461896511175-n-1@2x.jpg"
           />
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[10px]">
             <Lottie options={defaultOptions} height={150} width={150} />
