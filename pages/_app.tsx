@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="#030406"
         />
       </Head>
+      <Analytics/>
       <Component {...pageProps} />
     </Fragment>
   );

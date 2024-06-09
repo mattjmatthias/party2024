@@ -78,6 +78,7 @@ const LandingPage: NextPage = () => {
       <AfterParty />
       <RsvpComponent displayMoreInfo={false} id="2" />
       <NavigationFooter />
+      <Analytics/>
     </div>
   );
 };
