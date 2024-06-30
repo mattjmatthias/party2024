@@ -158,14 +158,14 @@ const RsvpComponent: NextPage<RsvpProps> = ({ displayMoreInfo, id }) => {
           <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-3.5">
             <div className=" flex flex-row items-start justify-start py-0 px-[7px] box-border">
               <div className="flex-1 relative text-base leading-[150%] font-small-text text-white text-left z-[2]">
-                Bringing anyone?
+                Anything to add?
               </div>
             </div>
             <input
               className="[outline:none] bg-[transparent] self-stretch h-11 relative font-small-text p-3 text-base text-white text-left rounded-lg box-border min-w-[250px] z-[1] border-[2px] border-solid border-white"
               type="text"
-              name="plus-one"
-              id={`plus-one-${id}`}
+              name="comments"
+              id={`comments-${id}`}
             />
           </div>
           <div className="flex flex-row items-start justify-start py-0 px-[7px] box-border max-w-full">

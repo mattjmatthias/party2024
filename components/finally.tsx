@@ -9,11 +9,11 @@ const Finally: NextPage = () => {
   </h2>
   <div className="self-stretch w-full gap-[5px] text-5xl">
     <div className="w-full grid lg:grid-cols-1 grid-cols-2 gap-[20px] md:gap-[24px]">
-      <NavigationLinks
+      {/*<NavigationLinks
         imgSrc="/user-1@2x.png"
         title="Feel free to bring a +1"
         subTitle="We’ve hired the whole venue and it accommodates plenty of people so feel free to bring someone as a +1, just let us know for the guest list"
-      />
+  />*/}
       <NavigationLinks
         imgSrc="/peanutfree@2x.png"
         title="Allergies + diets"
